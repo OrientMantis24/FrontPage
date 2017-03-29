@@ -6,6 +6,7 @@ import $ from 'jquery';
 window.JQuery = $;
 import bootstrap from 'bootstrap';
 import { SectionsContainer, Section, Header, Footer } from 'react-fullpage';
+import slideInRight from 'animate.css';
 
 const app = document.querySelector('#root');
 
@@ -33,11 +34,11 @@ class App extends React.Component {
                   <span className="icon-bar"></span>
                 </button>
               </div>
-              <div className="collapse navbar-collapse">
+              <div className="collapse navbar-collapse animated slideInRight">
                 <ul className="nav navbar-nav">
-                  <li><a href="#sectionOne">Strona główna</a></li>
-                  <li><a href="#sectionTwo">O mnie</a></li>
-                  <li><a href="#sectionThree">Umiejętności</a></li>
+                  <li><a href="#sectionOne" className="animated bounceInRight">Strona główna</a></li>
+                  <li><a href="#sectionTwo" className="animated bounceInRight">O mnie</a></li>
+                  <li><a href="#sectionThree" className="animated bounceInRight">Umiejętności</a></li>
                 </ul>
               </div>
             </div>
